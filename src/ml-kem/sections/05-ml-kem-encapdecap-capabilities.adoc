@@ -16,7 +16,7 @@ Below is an example of the registration for ML-KEM / encapDecap / FIPS203
             "valValue": "123456"
         }
     ],
-    "parameterSets": ["ML-KEM-512", "ML-KEM-768", "ML-KEM-1024"]
+    "parameterSets": ["ML-KEM-512", "ML-KEM-768", "ML-KEM-1024"],
     "functions": ["encapsulation", "decapsulation", "encapsulationKeyCheck", "decapsulationKeyCheck"]
 }
 ----

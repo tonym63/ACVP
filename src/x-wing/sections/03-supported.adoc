@@ -1,0 +1,8 @@
+﻿
+[#supported]
+== Supported X-WING Algorithms
+
+The following X-WING algorithms *MAY* be advertised by the ACVP compliant cryptographic module. The list is in the form "algorithm / mode / revision".
+
+* X-WING / keyGen / v1_0
+* X-WING / encapDecap / v1_0

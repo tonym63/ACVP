@@ -1,0 +1,27 @@
+﻿[#testtypes]
+== Test Types and Test Coverage
+
+[#ttypes]
+=== Test Types
+
+
+
+
+
+The ACVP server performs a set of tests on the specified X-WING algorithm in order to accsess the correctness and robustness of the implementation. A typical ACVP validation session *SHALL* require multiple tests to be performed for every supported permutation of X-WING capabilities. This section describes the design of the tests used to validate implementations of the X-WING algorithms.
+
+The IUT REQUIRED for each test case provided to generate an X-WING key pair from the provided 32-byte seed.  The generated encapsulation key (pk) and decapsulation key (sk) are communicated to the ACVP server and validated. This tests the implementation of the X-WING GenerateKeyPair() procedure and its deterministic variant GenerateKeyPairDerand(), as defined in Section 5.2 and Section 5.2.1 of the X-WING specification.
+
+For encapsulation testing, the server will generate a deterministic encapsultion seed ('eseed') and an encapsulation public key ('pk').  The implementation under test (IUT) shall perform the X-WING encapsulation operation and return the ciphertext ('ct') and shared secret ('ss).  
+
+=== X-WING / encapDecap / "VAL"
+
+Validation Test (VAL).
+
+For decapsulation validation, the server shall generate a valid X-WING decapsulation key ('dk') together with a corresponding valid ciphertext ('ct').  The UIT shall prform the X-WING Decapsulate() operation and return the resulting shared secret ('ss').
+
+Validation testing includes both successful decapsulation and modified-ciphertext test cases.  For modified-ciphertext test cases, the server shall independently modify the ML-kem ciphertxt component ('ct_m) and the X25519 cphertext ('ct = ct_M || ct_X').  The iut shall correctly process each modified ciphertext and return the resulting shared secret ('ss').
+
+These tests verify the implementtion of the X-WING decapsulation procedure defined in Section 5.5 of <<draft-connolly-cfrg-xwing-kem>>
+
+
