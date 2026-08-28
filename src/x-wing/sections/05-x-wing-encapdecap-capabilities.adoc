@@ -1,0 +1,23 @@
+
+[[x-wing_encapDecap_capabilities]]
+==== X-WING encapDecap Mode Capabilities Example
+
+Below is an example of the registration for X-WING / encapDecap / v1_0
+
+[source, json]
+----                                                             {  
+        "algorithm": "X-WING",
+        "mode': "encapDecap",
+        "revision": "1.0",
+        "prereqVals": [
+            {
+               "algorithm": "X-WING",
+               "valValue": "123456"
+            }
+        ],
+        "functions": [
+           "encapsulation",
+           "decapsulation"
+         ]
+       }
+----

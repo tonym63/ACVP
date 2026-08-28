@@ -1,0 +1,52 @@
+
+== Test Vectors
+
+The X-WING ACVP servr provides test vectors as jSON objcts.  Each test vector set consists of one or more test groups, with each group containing one or more test cases.  The top-level JSON object contains metadata identifying the algorithm, mode of operation, revision, and associated tst groups.
+
+== Top-Level JSON Object
+|===
+| Property | Description | JSON Type
+
+|acvVersion
+| Version of the ACVP protocol specification.
+| string
+
+| vsId
+| Vector set identifier assigned by the ACVP server.
+| integer
+
+| algorithm
+| Algorithm name. The value shall be "X-WING".
+| string
+
+| mode
+| Mode of operation supported by the vector set (for example, keygen or encapdecap)
+| string
+
+| revision
+| X-WING specification revision supported by the implementation.
+| string
+
+| testGroups
+| Array of one or more test groups.
+| array
+
+|===
+
+[source, json]
+----
+{
+   "arcVersion": "1.0",
+   "vsId": 42,
+   "algorithm": "X-WING",
+   "mode": "encapDecap",
+   "revision": "1.0",
+   "testGroups": [
+     {
+        ...
+     }
+   ]
+  }
+----
+
+

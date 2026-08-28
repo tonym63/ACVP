@@ -1,0 +1,46 @@
+
+[bibliography]
+== Normative References
+
+* [[[XWING]]], D. Connolly, et al.,
+_"X-Wing: generalized hybrid Post-Quantum KEM"_,
+IETF Internet-Draft,
+draft-connolly-cfrg-xwing-kem-10.
+
+* [[[RFC9180]]], Barnes, R., et al.,
+_"Hybrid Public Key Encryption (HPKE)"_,
+RFC 9180.
+
+* [[[RFC7748]]], Langley, A., Hamburg, M., Turner, S.,
+_"Elliptic Curves for Security"_,
+RFC 7748.
+
+* [[[FIPS203]]], National Institute of Standards and Technology,
+_"Module-Lattice-Based Key-Encapsulation Mechanism Standard (ML-KEM)"_, FIPS 203,
+
+[%bibitem]
+=== Automatic Cryptographic Validation Protocol
+id:: ACVP
+docid::
+  id::: ACVP
+contributor::
+contributor.person.name.initial:: B.
+contributor.person.name.surname:: Fussell
+contributor.person.affiliation.organization.name:: Cisco
+contributor::
+contributor.person.name.initial:: A.
+contributor.person.name.surname:: Vassilev
+contributor.person.affiliation.organization.name:: National Institute of Standards and Technology
+contributor.person.affiliation.organization.abbreviation:: NIST
+contributor::
+contributor.person.name.initial:: H.
+contributor.person.name.surname:: Booth
+contributor.person.affiliation.organization.name:: National Institute of Standards and Technology
+contributor.person.affiliation.organization.abbreviation:: NIST
+contributor::
+contributor.role:: publisher
+contributor.organization.name:: National Institute of Standards and Technology
+contributor.organization.abbreviation:: NIST
+date::
+date.type:: published
+date.value:: 2019-07-01

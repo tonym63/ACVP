@@ -1,0 +1,102 @@
+[[X-WING_encapDecap_Test_Vectors]]
+== X-WING encapDecap Test Vectors
+
+[[X-WING_enCapDecap_tgjs]]
+== X-WING encapDecap Test Groups JSON Schema Intro
+
+The examples in this section illustrate the JSON exchanges between the ACVP server and the implementation under test (IUT) for X-WING encapsulation and decapsulation testing. 
+
+== Prompt JSON (Encapsulation)
+
+----
+   {
+     "tgId": 1,
+     "tests": [
+       {
+         "tcId": 1,
+         "pk": "...",
+         "eseed": "...'
+        }
+       ]
+    }
+----
+|===
+
+| Property| Description
+| pk
+
+| X-WING public (encapsulation) key
+
+| eseed
+
+| Deterministic encapsulation seed
+
+| tcId
+
+| Test case Identifier
+
+|===
+
+== Prompt JSON (Decapsulation)
+
+
+[source,json]
+----
+{
+  "tgId": 2, 
+  "tests": [
+    {
+     "tcId": 26,
+     "ss": "1D1AE..."
+     }
+   ]
+}
+----
+|===
+| Property | Description
+| dk
+| X-WING decapsulation key.
+
+| ct
+| X-WING ciphertext.
+
+| tcId
+| Test case Identifier.
+
+|===
+
+== Validation
+
+Validation test vectors exercise both valid and modified ciphertexts.  The server independently modifies the ML-Kem ciphertext component (ct_M) and the X25519 ciphertext component (ct_X) to vrify that the implementation correctly processes each portion of the combined X-WING ciphertext.
+
+[source,json]
+----
+{
+  "tgId": 3,
+  "tests",: [
+    {
+       "tcId": 29,
+       "ss": "...",
+       "reason": "modified ctM"
+     },
+     {
+        "tcId": 30,
+         "ss": "...",
+         "reason"; "modified ctX"
+     }
+   ]
+}
+----
+|===
+| Property | Description
+| ss
+| Shared secret rturned by decapsulation.
+
+| reason
+| Validation disposition (modified ctM or modified ctX)
+
+| tcId
+| Test case Identifier.
+
+|===
+

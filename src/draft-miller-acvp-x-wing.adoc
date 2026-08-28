@@ -1,0 +1,54 @@
+= Automated Cryptographic Validation Protocol (ACVP) Documentation for the XWING Hybrid Key Encapsulation Mechanism
+:document: draft-celi-acvp-x-wing-01
+:docname: acvp-x
+:edition: 1
+:doctype: internet-draft
+:submission-type: independent
+:area: Internet
+:intended-series: informational
+:revdate: 2024-01-11
+:forname_initials: A.M.
+:lastname: Miller
+:fullname: Anthony Miller
+:organization: National Institute of Standards and Technology
+:street: 100 Bureau Drive
+:city: Gaithrsburg
+:code: 20899
+:country: United States of America
+:email: amm22@nist.gov
+:role: editor
+:docfile: draft-miller-acvp-x-wing.adoc
+:mn-documwnt-class: ietf
+:mn-output-extensions: xml,rfc,txt,html
+:area: General
+:keyword: acvp, crypto
+:abbrev: ACVP X-WING
+:status: public-designation
+:committee: Cryptographic Module Validation Program
+:language: en
+:imagesdir: images
+:mn-document-class: nist
+:mn-output-extension: xml, html, pdf, doc
+:fullname: Automated Cryptographic Validation System (ACVTS) Team
+// Singular name of the algorithm
+:spec-algorithm: General-purpose hybrid post-quantum ky encapsulation mechanism (KEM) specification combining the classical X25519 eliptic curve algorithm and the post-quantum ML-KEM-768 algorithm
+:algo-short-name: X-WING
+
+include::common/common-sections/00-abstract.adoc[]
+include::common/common-sections/01-intro.adoc[]
+include::common/common-sections/02-conventions.adoc[
+include::x-wing/sections/03-supported.adoc[]
+include::x-wing/sections/04-testtypes.adoc[]
+include::x-wing/sections/05-capabilities.adoc[]
+include::x-wing/sections/05-x-wing-encapdecap-capabilities.adoc[]
+include::x-wing/sections/05-x-wing-keygen-capabilities.adoc[]
+include::x-wing/sections/06-x-wing-encapdecap-test-vectors.adoc[]
+include::x-wing/sections/06-x-wing-keygen-test-vectors.adoc[]
+include::x-wing/sections/06-test-vectors.adoc[]
+include::x-wing/sections/07-x-wing-encapdecap-responses.adoc[]
+include::x-wing/sections/07-x-wing-keygen-responses.adoc[]
+include::x-wing/sections/07-responses.adoc[]
+include::x-wing/sections/98-references.adoc[]
+
+
+
