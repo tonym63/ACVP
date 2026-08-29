@@ -3,15 +3,15 @@
 The implementation relies on two underlying core algorithms:
 
    * MK_KEM-768: Conforming to FIPS 203 (Module-Lattice-Based Key Encapsulation mechanism)
-   * X25519: Conforming to SP 800-186 / RFC7748 for eliptic curve cryptography.[1, 2]
+   * X25519: Conforming to SP 800-186 / RFC7748 for   elliptic-curve cryptography.[1, 2]
 
 === Prerequisite Validations
 
-efore XWING algorithm validation can be executed, the underlying cryptographic libraries must demonstrate sucessful validation of the following prerequisite algorithm primitives:
+before XWING algorithm validation can be executed, the underlying cryptographic libraries must demonstrate successful validation of the following prerequisite algorithm primitives:
 
 |===
 
-| Prerequisite Primitive | Standard Reference | Operationl Purpose
+| Prerequisite Primitive | Standard Reference | Operational Purpose
 
 | SHA3-256 / SHAKE256
 
@@ -29,9 +29,9 @@ efore XWING algorithm validation can be executed, the underlying cryptographic l
 
 = ACVP Validation Interface & JSON Profile
 
-The validation process uses standard ACVP JSON profiles to communicate registration data, test vctors, and response structures.
+The validation process uses standard ACVP JSON profiles to communicate registration data, test vectors, and response structures.
 
-=== Algorithm Registration Capabilities
+== Algorithm Registration Capabilities
 
 THe following JSON payload outlines the capabilities registration block sent by the client to request XWING test vector challenges:
 
@@ -47,16 +47,16 @@ THe following JSON payload outlines the capabilities registration block sent by 
 {
 "mode": "keyGen",
 "role": ["initiator","responder"]
-},
+],
 {
 "mode":"encapsulation",
 "role":[initiator]
-],
+
 {
 "mode":"decapsulation",
 "role":["responder"]
-}
-]
-}
-]
-}
+
+
+
+
+

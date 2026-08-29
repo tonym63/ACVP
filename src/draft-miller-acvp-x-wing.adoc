@@ -1,8 +1,7 @@
-= Automated Cryptographic Validation Protocol (ACVP) Documentation for the XWING Hybrid Key Encapsulation Mechanism
-:document: draft-celi-acvp-x-wing-01
+== ACVP X-WING JSON Specification
+:doctype: book
+:docnumber: draft-miller-acvp-x-wing-01
 :docname: acvp-x
-:edition: 1
-:doctype: internet-draft
 :submission-type: independent
 :area: Internet
 :intended-series: informational
