@@ -4,10 +4,10 @@
 [[X-WING_keygen_tgjs]]
 == X-WING Key Generation Test Groups JSON Schema Intro
 
-The Key Generation test vectors verify that the implementation corretly performs the X-WING GenerateKeyPair() operation.  THe server supplies the deterministic 32-byte seed (seed).  The implementation under test (IUT) shall generate the corresponding X-WING public (encapsulation)
+The Key Generation test vectors verify the implementation correctly performs the X-WING GenerateKeyPair() operation.  THe server supplies the deterministic 32-byte SkSeed (seed).  The implementation under test (IUT) shall generate the corresponding X-WING public (encapsulation)
  key 9pk) and decapsulation key (dk).
 
-These tests verify the implementation of the x-WING GenerateKeyPair() procedure defined om Setion 5.2 of <<draft-connolly-cfrg-xwing-kem>>.
+These tests verify the implementation of the x-WING GenerateKeyPair() procedure defined om Section 5.2 of <<XWING>>.
 
 == Prompt JSON
 
@@ -15,7 +15,7 @@ These tests verify the implementation of the x-WING GenerateKeyPair() procedure 
 ----
 {
    "tgId": 1,
-    "tests"; [
+    "tests": [
       {
          "tcId": 1,
          "seed": "0123456789ABCDEF..."
@@ -43,12 +43,12 @@ These tests verify the implementation of the x-WING GenerateKeyPair() procedure 
 [source, json]
 ----
 {
-   "tgId:: 1,
+   "tgId": 1,
    "tests": [
      {
        "tcId": 1,
        "pk": "A1B2C3D4...",
-       "dk": "E5F60718...",
+       "dk": "E5F60718..."
      }
    ]
 }

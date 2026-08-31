@@ -22,6 +22,6 @@ For decapsulation validation, the server shall generate a valid X-WING decapsula
 
 Validation testing includes both successful decapsulation and modified-ciphertext test cases.  For modified-ciphertext test cases, the server shall independently modify the ML-kem ciphertext component ('ct_m) and the X25519 ciphertext ('ct = ct_M || ct_X').  The iut shall correctly process each modified ciphertext and return the resulting shared secret ('ss').
 
-These tests verify the implementation of the X-WING decapsulation procedure defined in Section 5.5 of <<draft_connolly_cfrg_xwing_kem>>
+These tests verify the implementation of the X-WING decapsulation procedure defined in Section 5.5 of <<XWING>>
 
 

@@ -7,15 +7,15 @@
 The examples in this section illustrate the JSON exchanges between the ACVP server and the implementation under test (IUT) for X-WING encapsulation and decapsulation testing. 
 
 == Prompt JSON (Encapsulation)
-
+[source, json]
 ----
    {
      "tgId": 1,
      "tests": [
        {
          "tcId": 1,
-         "pk": "...",
-         "eseed": "...'
+         "pk": "A1B2C3",
+         "eseed": "D2E3F4"
         }
        ]
     }
@@ -47,7 +47,7 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
   "tests": [
     {
      "tcId": 26,
-     "ss": "1D1AE..."
+     "ss": "1D1AE"
      }
    ]
 }

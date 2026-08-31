@@ -51,19 +51,20 @@ For ech key generation test case, the IUT shall generate the corresponding X-WIN
 === Example Response
 [source, json]
 ----
-
-   "acvVersion"  "1.0",
-    "vsId": 42,
+{
+   "acvVersion": "1.0",
+    "vsId": "42",
     "testGroups": [
         {
             "tgId": 1,
             "tests": [
                {
                  "tcId": 1,
-                 "pk": "A1B2C3D4...",
-                 "dk": "E5F60718..."
+                 "pk": "A1B2C3D4",
+                 "dk": "E5F60718"
                 }
             ]
-          }
- 
+        }
+   ]
+}
 ----
