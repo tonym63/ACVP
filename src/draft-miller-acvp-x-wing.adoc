@@ -1,4 +1,4 @@
-== ACVP X-WING JSON Specification
+= ACVP X-WING JSON Specification
 :doctype: book
 :docnumber: draft-miller-acvp-x-wing-01
 :docname: acvp-x
