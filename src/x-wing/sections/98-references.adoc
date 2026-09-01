@@ -8,8 +8,7 @@
 
 * [[[RFC7748,IETF(RFC 7748)]]]
 
-* [[[FIPS203]]] National Institute of Standards and Technology,
-_"Module-Lattice-Based Key-Encapsulation Mechanism Standard (ML-KEM)"_, FIPS 203,
+* [[[FIPS203,NIST FIPS 203]]]
 
 [%bibitem]
 == Automatic Cryptographic Validation Protocol
