@@ -6,9 +6,7 @@
 
 * [[[RFC9180,RFC 9180]]]
 
-* [[[RFC7748]]] Langley, A., Hamburg, M., Turner, S.,
-_"Elliptic Curves for Security"_,
-RFC 7748.
+* [[[RFC7748,IETF(RFC 7748)]]]
 
 * [[[FIPS203]]] National Institute of Standards and Technology,
 _"Module-Lattice-Based Key-Encapsulation Mechanism Standard (ML-KEM)"_, FIPS 203,
