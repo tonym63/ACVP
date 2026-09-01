@@ -3,11 +3,8 @@
 == Normative References
 
 * [[[XWING,IETF(I-D.connolly-cfrg-xwing-kem)]]]
-
 * [[[RFC9180,RFC 9180]]]
-
 * [[[RFC7748,IETF(RFC 7748)]]]
-
 * [[[FIPS203,NIST FIPS 203]]]
 
 [%bibitem]
