@@ -2,10 +2,7 @@
 [bibliography]
 == Normative References
 
-* [[[XWING]]] D. Connolly, et al.,
-_"X-Wing: generalized hybrid Post-Quantum KEM"_,
-IETF Internet-Draft,
-draft-connolly-cfrg-xwing-kem-10.
+* [[[XWING,IETF(I-D.connolly-cfrg-xwing-kem)]]]
 
 * [[[RFC9180,RFC 9180]]]
 
