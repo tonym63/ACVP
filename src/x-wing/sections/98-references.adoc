@@ -7,9 +7,7 @@ _"X-Wing: generalized hybrid Post-Quantum KEM"_,
 IETF Internet-Draft,
 draft-connolly-cfrg-xwing-kem-10.
 
-* [[[RFC9180]]] Barnes, R., et al.,
-_"Hybrid Public Key Encryption (HPKE)"_,
-RFC 9180.
+* [[[RFC9180,RFC 9180]]]
 
 * [[[RFC7748]]] Langley, A., Hamburg, M., Turner, S.,
 _"Elliptic Curves for Security"_,
