@@ -3,7 +3,7 @@
 
 The X-WING ACVP server provides test vectors as JSON objects.  Each test vector set consists of one or more test groups, with each group containing one or more test cases.  The top-level JSON object contains metadata identifying the algorithm, mode of operation, revision, and associated test groups.
 
-== Top-Level JSON Object
+.Top Level Test Vector JSON Elements
 |===
 | Property | Description | JSON Type
 
@@ -32,7 +32,7 @@ The X-WING ACVP server provides test vectors as JSON objects.  Each test vector 
 | array
 
 |===
-
+.Example Test Vector Element
 [source, json]
 ----
 {

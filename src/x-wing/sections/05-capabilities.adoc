@@ -7,8 +7,9 @@ The implementation relies on two underlying core algorithms:
 
 === Prerequisite Validations
 
-before XWING algorithm validation can be executed, the underlying cryptographic libraries must demonstrate successful validation of the following prerequisite algorithm primitives:
+Before XWING algorithm validation can be executed, the underlying cryptographic libraries must demonstrate successful validation of the following prerequisite algorithm primitives:
 
+.Prerequisite algorithm primitives
 |===
 
 | Prerequisite Primitive | Standard Reference | Operational Purpose
@@ -35,27 +36,33 @@ The validation process uses standard ACVP JSON profiles to communicate registrat
 
 THe following JSON payload outlines the capabilities registration block sent by the client to request XWING test vector challenges:
 
+.Registration Block Schema
 [source.json]
 ----
 {
-"acvVersion":"1.1.0",
-"algorithms": [
-{
-"id": 0,
-"algorithm": "XWING",
-"revision": "1.0",
-"capabilities": [
-{
-"mode": "keyGen",
-"role": ["initiator","responder"]
-],
-{
-"mode":"encapsulation",
-"role":[initiator]
-
-{
-"mode":"decapsulation",
-"role":["responder"]
+  "acvVersion":"1.1.0",    
+  "algorithms": [
+   {
+    "id": 0,
+    "algorithm": "XWING",
+     "revision": "1.0",
+     "capabilities": [
+     {
+       "mode": "keyGen",
+        "role": ["initiator","responder"]
+      },
+      {
+        "mode":"encapsulation",
+         "role":[initiator]
+       },
+       {
+         "mode":"decapsulation",
+          "role":["responder"]
+        }
+       ]
+      }
+    ]
+ }
 ----
 
 

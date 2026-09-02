@@ -2,11 +2,11 @@
 == X-WING encapDecap Test Vectors
 
 [[X-WING_enCapDecap]]
-== X-WING encapDecap Test Groups JSON Schema Intro
+== X-WING encapDecap Test Groups JSON Schema
 
 The examples in this section illustrate the JSON exchanges between the ACVP server and the implementation under test (IUT) for X-WING encapsulation and decapsulation testing. 
 
-== Prompt JSON (Encapsulation)
+.Encapsulation Schema
 [source, json]
 ----
    {
@@ -20,6 +20,8 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
        ]
     }
 ----
+
+.XWING encapDecap Test Case JSON Object
 |===
 
 | Property| Description
@@ -34,12 +36,9 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
 | tcId
 
 | Test case Identifier
-
 |===
 
-== Prompt JSON (Decapsulation)
-
-
+.Decapsulation Schema
 [source,json]
 ----
 {
@@ -52,6 +51,7 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
    ]
 }
 ----
+.Prompt JSON (Decapsulation)
 |===
 | Property | Description
 | dk
@@ -69,6 +69,7 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
 
 Validation test vectors exercise both valid and modified ciphertexts.  The server independently modifies the ML-Kem ciphertext component (ct_M) and the X25519 ciphertext component (ct_X) to verify that the implementation correctly processes each portion of the combined X-WING ciphertext.
 
+.Test Vector Validation
 [source,json]
 ----
 {
@@ -87,6 +88,8 @@ Validation test vectors exercise both valid and modified ciphertexts.  The serve
    ]
 }
 ----
+
+.Test Case Validation Table
 |===
 | Property | Description
 | ss

@@ -9,8 +9,7 @@ The Key Generation test vectors verify the implementation correctly performs the
 
 These tests verify the implementation of the x-WING GenerateKeyPair() procedure defined om Section 5.2 of <<XWING>>.
 
-== Prompt JSON
-
+.Prompt JSON
 [source, json]
 ----
 {
@@ -24,6 +23,7 @@ These tests verify the implementation of the x-WING GenerateKeyPair() procedure 
 }
 ----
 
+.Generate X-WING Key Pair
 |===
 
 | Property | Description
@@ -36,10 +36,8 @@ These tests verify the implementation of the x-WING GenerateKeyPair() procedure 
 
 |===
 
-== Expected Results
 
-
-
+.KeyGen Test Case 
 [source, json]
 ----
 {
@@ -53,6 +51,8 @@ These tests verify the implementation of the x-WING GenerateKeyPair() procedure 
    ]
 }
 ----
+
+.X-WING keyGen Test Case JSON Object
 |===
 | Property | Description
 
