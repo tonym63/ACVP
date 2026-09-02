@@ -2,7 +2,7 @@
 [bibliography]
 == Normative References
 
-* [[[XWING,IETF(I-D.connolly-cfrg-xwing-kem)]]]
+* [[[XWING, repo:(IETF D.connolly-cfrg-xwing-kem)]]], IETF Internet-Draft: X-Wing Hybrid Key Encapsulation Mechanism
 * [[[RFC9180,RFC 9180]]]
 * [[[RFC7748,IETF(RFC 7748)]]]
 * [[[FIPS203,NIST FIPS 203]]]
