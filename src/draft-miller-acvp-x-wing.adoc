@@ -2,6 +2,7 @@
 :doctype: book
 :docnumber: draft-miller-acvp-x-wing-01
 :docname: acvp-x
+:novalid:
 :submission-type: independent
 :area: Internet
 :intended-series: informational
