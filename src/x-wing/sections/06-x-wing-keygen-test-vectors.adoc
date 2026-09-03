@@ -1,8 +1,8 @@
 [[X-WING_keygen_test_Vectors]]
-== X-WING Key Generation Test Vectors
+=== X-WING Key Generation Test Vectors
 
 [[X-WING_keygen_tgjs_2]]
-== X-WING Key Generation Test Groups JSON Schema Intro
+=== X-WING Key Generation Test Groups JSON Schema Intro
 
 The Key Generation test vectors verify the implementation correctly performs the X-WING GenerateKeyPair() operation.  THe server supplies the deterministic 32-byte SkSeed (seed).  The implementation under test (IUT) shall generate the corresponding X-WING public (encapsulation)
  key 9pk) and decapsulation key (dk).
