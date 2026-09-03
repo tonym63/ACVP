@@ -9,6 +9,7 @@
 :forname_initials: A.M.
 :lastname: Miller
 :fullname: Anthony Miller
+:role: author
 :organization: National Institute of Standards and Technology
 :street: 100 Bureau Drive
 :city: Gaithrsburg
