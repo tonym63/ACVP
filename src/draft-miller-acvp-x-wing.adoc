@@ -6,8 +6,6 @@
 :area: Internet
 :intended-series: informational
 :revdate: 2024-01-11
-:forname_initials: A.M.
-:lastname: Miller
 :fullname: Anthony Miller
 :role: author
 :organization: National Institute of Standards and Technology
@@ -29,7 +27,8 @@
 :imagesdir: images
 :mn-document-class: nist
 :mn-output-extension: xml, html, pdf, doc
-:fullname: Automated Cryptographic Validation System (ACVTS) Team
+:fullname_2: Automated Cryptographic Validation System (ACVTS) Team
+:role_2: author
 // Singular name of the algorithm
 :spec-algorithm: General-purpose hybrid post-quantum ky encapsulation mechanism (KEM) specification combining the classical X25519 eliptic curve algorithm and the post-quantum ML-KEM-768 algorithm
 :algo-short-name: X-WING
