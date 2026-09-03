@@ -1,8 +1,8 @@
 [[X-WING_encapDecap_Test_Vectors]]
-== X-WING encapDecap Test Vectors
+=== X-WING encapDecap Test Vectors
 
 [[X-WING_enCapDecap]]
-== X-WING encapDecap Test Groups JSON Schema
+==== X-WING encapDecap Test Groups JSON Schema
 
 The examples in this section illustrate the JSON exchanges between the ACVP server and the implementation under test (IUT) for X-WING encapsulation and decapsulation testing. 
 
