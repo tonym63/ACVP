@@ -28,11 +28,11 @@ Before XWING algorithm validation can be executed, the underlying cryptographic 
 
 |===
 
-= ACVP Validation Interface & JSON Profile
+=== ACVP Validation Interface & JSON Profile
 
 The validation process uses standard ACVP JSON profiles to communicate registration data, test vectors, and response structures.
 
-== Algorithm Registration Capabilities
+=== Algorithm Registration Capabilities
 
 THe following JSON payload outlines the capabilities registration block sent by the client to request XWING test vector challenges:
 
