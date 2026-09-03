@@ -65,7 +65,7 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
 
 |===
 
-== Validation
+=== Validation
 
 Validation test vectors exercise both valid and modified ciphertexts.  The server independently modifies the ML-Kem ciphertext component (ct_M) and the X25519 ciphertext component (ct_X) to verify that the implementation correctly processes each portion of the combined X-WING ciphertext.
 
