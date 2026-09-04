@@ -1,7 +1,7 @@
 ﻿[#testtypes]
 == Test Types and Test Coverage
 
-[#ttypes]
+
 === Test Types
 
 
