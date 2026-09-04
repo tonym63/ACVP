@@ -37,7 +37,7 @@ The validation process uses standard ACVP JSON profiles to communicate registrat
 THe following JSON payload outlines the capabilities registration block sent by the client to request XWING test vector challenges:
 
 .Registration Block Schema
-[source.json]
+[source,json]
 ----
 {
   "acvVersion":"1.1.0",    
@@ -53,7 +53,7 @@ THe following JSON payload outlines the capabilities registration block sent by 
       },
       {
         "mode":"encapsulation",
-         "role":[initiator]
+         "role":["initiator"]
        },
        {
          "mode":"decapsulation",
