@@ -31,7 +31,7 @@
 :fullname_2: Automated Cryptographic Validation System (ACVTS) Team
 :role_2: author
 // Singular name of the algorithm
-:spec-algorithm: General-purpose hybrid post-quantum ky encapsulation mechanism (KEM) specification combining the classical X25519 eliptic curve algorithm and the post-quantum ML-KEM-768 algorithm
+:spec-algorithm: General-purpose hybrid post-quantum key encapsulation mechanism (KEM) specification combining the classical X25519 eliptic curve algorithm and the post-quantum ML-KEM-768 algorithm
 :algo-short-name: X-WING
 
 include::common/common-sections/00-abstract.adoc[]
