@@ -1,12 +1,9 @@
-﻿[#testtypes]
+﻿// Top lines of testTypes.adoc
+[#testtypes]
 == Test Types and Test Coverage
 
-
+[#ttypes]
 === Test Types
-
-
-
-
 
 The ACVP server performs a set of tests on the specified X-WING algorithm in order to access the correctness and robustness of the implementation. A typical ACVP validation session *SHALL* require multiple tests to be performed for every supported permutation of X-WING capabilities. This section describes the design of the tests used to validate implementations of the X-WING algorithms.
 
