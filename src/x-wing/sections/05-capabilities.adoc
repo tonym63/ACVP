@@ -4,6 +4,7 @@ The implementation relies on two underlying core algorithms:
 
    * MK_KEM-768: Conforming to FIPS 203 (Module-Lattice-Based Key Encapsulation mechanism)
    * X25519: Conforming to SP 800-186 / RFC7748 for   elliptic-curve cryptography.[1, 2]
+    * X25519 as specified in <<RFC7748>>, is a required prerequisite algorithm for X-WING validation.
 
 === Prerequisite Validations
 
