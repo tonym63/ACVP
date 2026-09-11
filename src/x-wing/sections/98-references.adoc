@@ -4,6 +4,8 @@
 
 * [[[XWING, repo:(IETF D.connolly-cfrg-xwing-kem)]]], IETF Internet-Draft: X-Wing Hybrid Key Encapsulation Mechanism
 * [[[RFC9180,RFC 9180]]]
+* [[[RFC2119,RFC 2119]]]
+* [[[RFC8174,RFC 8174]]]
 * [[[RFC7748,IETF(RFC 7748)]]]
 * [[[FIPS203,NIST FIPS 203]]]
 * [[[ACVP, ACVP]]], _Automatic Cryptographic Validation Protocol_
