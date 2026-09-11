@@ -42,6 +42,7 @@ include::x-wing/sections/06-test-vectors.adoc[]
 include::x-wing/sections/07-x-wing-encapdecap-responses.adoc[]
 include::x-wing/sections/07-x-wing-keygen-responses.adoc[]
 include::x-wing/sections/07-responses.adoc[]
+include::common/common-sections/99-acknowledgements.adoc[]
 include::x-wing/sections/98-references.adoc[]
 
 
