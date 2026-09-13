@@ -24,18 +24,29 @@ The examples in this section illustrate the JSON exchanges between the ACVP serv
 .XWING encapDecap Test Case JSON Object
 |===
 
-| Property| Description
+| Property| Description | JSON type
 | pk
+| X-WING public encapsulation key
 
-| X-WING public (encapsulation) key
+| hex
 
 | eseed
 
 | Deterministic encapsulation seed
 
+| hex
+
 | tcId
 
-| Test case Identifier
+| Numeric identifier for the test case, unique across the entire vector set
+
+| integer
+
+| tgId
+
+| Numeric identifier for the test group, unique across the entire vector set
+
+| integer
 |===
 
 .Decapsulation Schema
@@ -91,15 +102,18 @@ Validation test vectors exercise both valid and modified ciphertexts.  The serve
 
 .Test Case Validation Table
 |===
-| Property | Description
+| Property | Description | JSON type
 | ss
 | Shared secret returned by decapsulation.
+| integer
 
 | reason
 | Validation disposition (modified ctM or modified ctX)
+| text
 
 | tcId
 | Test case Identifier.
+| integer
 
 |===
 

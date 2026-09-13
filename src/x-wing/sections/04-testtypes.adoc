@@ -5,19 +5,25 @@
 [#ttypes]
 === Test Types
 
-The ACVP server performs a set of tests on the specified X-WING algorithm in order to access the correctness and robustness of the implementation. A typical ACVP validation session *SHALL* require multiple tests to be performed for every supported permutation of X-WING capabilities. This section describes the design of the tests used to validate implementations of the X-WING algorithms.
+The ACVP server performs a set of tests on the specified X-WING algorithm in order to assess the correctness and robustness of the implementation. A typical ACVP validation session would require multiple tests to be performed for every supported permutation of X-WING capabilities. This section describes the design of the tests used to validate implementations of the X-WING algorithms.
 
-The IUT REQUIRED for each test case provided to generate an X-WING key pair from the provided 32-byte seed.  The generated encapsulation key (pk) and decapsulation key (sk) are communicated to the ACVP server and validated. This tests the implementation of the X-WING GenerateKeyPair() procedure and its deterministic variant GenerateKeyPairDerand(), as defined in Section 5.2 and Section 5.2.1 of the X-WING specification.
+=== X-WING / keyGen / "AFT"
 
-For encapsulation testing, the server will generate a deterministic encapsulation seed ('eseed') and an encapsulation public key ('pk').  The implementation under test (IUT) shall perform the X-WING encapsulation operation and return the ciphertext ('ct') and shared secret ('ss').  
+- Algorithm Functional Test (AFT)
+
+The ACVP server provides the IUT with a 32-byte decapsulation key sk.  The IUT shall use the provided sk to perform the deterministic X_WING key-generation procedure, GenerateKeyPairDerand(sk), and return the resulting 1216-byte encapsulation key pk.  This test vereifies that the IUT correctly implements the X-WING key derivation and key-generation procedure defined in section 5.2 and 5.2.1 on th X-WING specification.
+
+=== X-WING / encapDecap / "AFT"
+
+- Algorithm Functional Test (AFT)
+
+The IUT shall perform the X-WING encapsulation or decapsulation operation using the values provided by the ACVP server and return the resulting ciphertext and shared secret, as applicable, for validation.  The test verifies that the IUT correctly implements the X-WING EncapsulateDerand() and Decapsulate() procedures defined in Section 5.4.1 and 5.5 of the X-WING specification.
 
 === X-WING / encapDecap / "VAL"
 
 Validation Test (VAL).
 
-For decapsulation validation, the server shall generate a valid X-WING decapsulation key ('dk') together with a corresponding valid ciphertext ('ct').  The IUT shall perform the X-WING Decapsulate() operation and return the resulting shared secret ('ss').
-
-Validation testing includes both successful decapsulation and modified-ciphertext test cases.  For modified-ciphertext test cases, the server shall independently modify the ML-KEM ciphertext component ('ct_m) and the X25519 ciphertext ('ct = ct_M || ct_X').  The IUT shall correctly process each modified ciphertext and return the resulting shared secret ('ss').
+For X-WING encapDecap Validation testing the ACVP server provides the IUT with an X-WING decapsulation key (sk) and cipherText (ct).  Validation testing includes both unmodified and modified-ciphertext test cases.  THe IUT SHALL perform the X-WING Encapsulate(ct, sk) procedure for each test case and return the resulting 32-byte shared secret (ss) to the ACVP server for validation.  The test verifies that the IUT correctly processes X-WING ciphertext in accordance with the decapsulation procedure defined in Section 5.5 of the X-wing specification.
 
 These tests verify the implementation of the X-WING decapsulation procedure defined in Section 5.5 of <<XWING>>
 
