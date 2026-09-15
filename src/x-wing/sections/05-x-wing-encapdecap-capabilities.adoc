@@ -11,13 +11,9 @@ Below is an example of the registration for X-WING / encapDecap / v1_0
         "algorithm": "X-WING",
         "mode": "encapDecap",
         "revision": "1.0",
-         "prereqVals": [
-            {
-               "algorithm": "SHA",
-               "valValue": "123456"
-            }
-        ],
-        "parameterSet": [ "ML-KEM-768"],
-        "function": ["encapsulation", "decapsulation"]
+         "function": [            
+               "encapsulation",
+               "decapsulation"
+        ]        
   }
 ----

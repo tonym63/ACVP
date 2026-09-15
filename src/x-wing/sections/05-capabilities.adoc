@@ -35,6 +35,22 @@ Before XWING algorithm validation can be executed, the underlying cryptographic 
 
 The validation process uses standard ACVP JSON profiles to communicate registration data, test vectors, and response structures.
 
+=== X-WING Algorithm Registration Properties
+
+Each X-WING algorithm capability advertised is a self-contained JSON object using the following values.
+
+.X-WING Algorithm Capabilities JSON Values
+|===
+| JSON Value | Description | JSON Type | Valid Values
+| algorithm | Algorithm Validation | string | X-WING
+| mode | X-WING mode to be validated| string | keygen, encapDecap                             
+| revision | The algorithm testing revision to be used | string | See <<supported>>
+|prereqVals | Prerequisite algorithm validation | array | See <<prerequisites>>
+| function | The X-WING operation supported by the IUT | array | encapsulation, decapsulation
+|===
+
+Note: The function property is applicable only to X-WING/ encapDecap registration.
+
 === Algorithm Registration Capabilities
 
 THe following JSON payload outlines the capabilities registration block sent by the client to request XWING test vector challenges:
