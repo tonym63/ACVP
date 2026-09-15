@@ -1,119 +1,91 @@
-[[X-WING_encapDecap_Test_Vectors]]
+[[X-WING_encapDecap_test_vectors]]
 === X-WING encapDecap Test Vectors
 
-[[X-WING_enCapDecap]]
+[[X-WING_encapDecap_tgjs]]
 ==== X-WING encapDecap Test Groups JSON Schema
 
-The examples in this section illustrate the JSON exchanges between the ACVP server and the implementation under test (IUT) for X-WING encapsulation and decapsulation testing. 
+he testGroups element at the top level in the test vector JSON object is an array of test groups. Test vectors are grouped into similar test cases to reduce the amount of data transmitted in the vector set. The Test Group JSON object contains metadata that applies to all test vectors within the group. The following table describes the {algo-short-name} JSON elements of the Test Group JSON object.
 
-.Encapsulation Schema
-[source, json]
-----
-   {
-     "tgId": 1,
-     "tests": [
-       {
-         "tcId": 1,
-         "pk": "A1B2C3",
-         "eseed": "D2E3F4"
-        }
-       ]
-    }
-----
+The test group for X-WING / encapDecap / 1.0 is as follows:
 
-.XWING encapDecap Test Case JSON Object
+[[X-WING_keyGen_vs_tg_table]]
+X-WING keyGen Test Group JSON Object
+|===
+| JSON Value | Description | JSON Type
+
+| tgId
+| Numeric identifier for the test group, unique across the entire vector set
+| integer
+
+| testType
+| The test operation performed
+| string
+
+| tests
+|Array of individual test vector JSON objects, which are defined in <<X-WING_encapDecap_tvjs>>
+| array
 |===
 
-| Property| Description | JSON type
-| pk
-| X-WING public encapsulation key
+[[X-WING_encapDecap_tvjs]]
+==== X-WING encapDecap Test Case JSON Schema
 
+each test group contains an array of ne or more tst caes.  Each test case is a JSON object that represents a single test vector to be processed by the CVP client.  the following table describes the JSON elements for ech X-WING test vector.
+
+[[X-WING_encapDecap_vs_tc_table]]
+X-WING keyGen test Case JSON Object
+|===
+| JSON Value | Description | JSON Type
+
+| tcID
+| Numeric identifier for the tst case, unique across the entire vector set
+| integer
+
+| pk
+| The 1216-byte encapsulation key when the function is encapsulation.
 | hex
 
 | eseed
-
-| Deterministic encapsulation seed
-
+| 64-byte deterministic encapsulation seed when the function is encalsulation
 | hex
 
-| tcId
-
-| Numeric identifier for the test case, unique across the entire vector set
-
-| integer
-
-| tgId
-
-| Numeric identifier for the test group, unique across the entire vector set
-
-| integer
-|===
-
-.Decapsulation Schema
-[source,json]
-----
-{
-  "tgId": 2, 
-  "tests": [
-    {
-     "tcId": 26,
-     "ss": "1D1AE"
-     }
-   ]
-}
-----
-.Prompt JSON (Decapsulation)
-|===
-| Property | Description
-| dk
-| X-WING decapsulation key.
+| sk
+| The 32-byte dcapsulation key when th function is decapsulation
+| hex
 
 | ct
-| X-WING ciphertext.
-
-| tcId
-| Test case Identifier.
-
+| the 1120-byte ciphertext when the function is decapsulation
+| hex
 |===
 
-=== Validation
+The following is an example JSON object sent from the server to the client for X-WING/ encapDecap / 1.0
 
-Validation test vectors exercise both valid and modified ciphertexts.  The server independently modifies the ML-KEM ciphertext component (ct_M) and the X25519 ciphertext component (ct_X) to verify that the implementation correctly processes each portion of the combined X-WING ciphertext.
-
-.Test Vector Validation
+.Prompt JSON
 [source,json]
 ----
-{
-  "tgId": 3,
-  "tests": [
+[
+ {
+   "acvVersion": "<acvp-version>"
+  },
+  {
+    "vsId": 0,
+     "algorithm": "X-WING",
+     "mode" : "encapDecap",
+     "revision": "1.0",
+     "testGroups": [
     {
-       "tcId": 29,
-       "ss": "...",
-       "reason": "modified ctM"
-     },
-     {
-        "tcId": 30,
-         "ss": "...",
-         "reason": "modified ctX"
-     }
+       "tgId": 1,
+       "testTypes": "AFT",
+       "function": "encapsulation",
+        "tests": [
+      {
+         "tcId": 1,
+         "pk": "0123456789ABCDEF...",
+         "eseed": "01A12B34C..."
+       }
+     ]
+    }
    ]
-}
+  }
+]
 ----
-
-.Test Case Validation Table
-|===
-| Property | Description | JSON type
-| ss
-| Shared secret returned by decapsulation.
-| integer
-
-| reason
-| Validation disposition (modified ctM or modified ctX)
-| text
-
-| tcId
-| Test case Identifier.
-| integer
-
-|===
 

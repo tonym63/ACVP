@@ -1,4 +1,4 @@
-
+﻿[#test-vectors]
 == Test Vectors
 
 The ACVP server provides test vectors to the ACVP client, which are then processed by the iUt and returned to the ACVP server for validation. A typical ACVP validation test session msy require multiple test vector sets to be downloaded and processed by the ACVP client. Each test vector set represents an individual cryptographic algorithm and mode defined during the capabilities registration. 
@@ -30,7 +30,7 @@ For X-WING test vector sets are provided for the keygen and encapdecap modes des
 | string
 
 | testGroups
-| Array of test group JSON objects, which are defined in <<X-WING_keyGen_tgjs>> or <<X-WING_encapDecap_tgjs>>
+| Array of test group JSON objects, which are defined in <<tgJS>>
 | array
 |===
 
