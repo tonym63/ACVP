@@ -1,7 +1,7 @@
 [#prerequisites]
 === Prerequisites
 
-An X-WING implementation relies on underlying cryptographic primitives.  Required prerequisite algorighm implementation *MUST* be validated eithr seperately or as part of the same submission.  ACVP provides a mechanism for specifying prerequisite algorithm validation.
+An X-WING implementation relies on underlying cryptographic primitives.  Required prerequisite algorithm implementation *MUST* be validated either separately or as part of the same submission.  ACVP provides a mechanism for specifying prerequisite algorithm validation.
 
 Prerequisites, if applicable, *MUST* be submitted in the registration using the `prereqVals` JSON property array within each element of the `algorithms` array. Each element in the `prereqVals` array *MUST* contain the following properties.
 
@@ -15,7 +15,7 @@ Prerequisites, if applicable, *MUST* be submitted in the registration using the 
 
 A "valValue" of "same" *SHALL* indicate that the prerequisite is satisfied by another algorithm capability included in the same registration.
 
-An example description of prerequisites within a single algorithm capability exchange looks like this
+An example description of prerequisites within a single algorithm capability exchange looks like this.
 
 [source,json]
 ----

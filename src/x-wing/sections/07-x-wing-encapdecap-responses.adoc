@@ -1,7 +1,7 @@
 [[X-WING_encapDecap_vector_responses]]
 === X-WING encapDecap Test Vector Responses
 
-The test groups for X-WING / encapDecap / 1.0 contain th responses produced by the IUT for the requested encapsulation or decapsulation operation.  Th groups can be described using the following table.
+The test groups for X-WING / encapDecap / 1.0 contain th responses produced by the IUT for the requested encapsulation or decapsulation operation.  The groups can be described using the following table.
 
 [[X-WING_encapDecap_group_table]]
 .X-WING encapDecap Test Group Response JSON Object

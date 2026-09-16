@@ -4,7 +4,7 @@
 [[X-WING_encapDecap_tgjs]]
 ==== X-WING encapDecap Test Groups JSON Schema
 
-he testGroups element at the top level in the test vector JSON object is an array of test groups. Test vectors are grouped into similar test cases to reduce the amount of data transmitted in the vector set. The Test Group JSON object contains metadata that applies to all test vectors within the group. The following table describes the {algo-short-name} JSON elements of the Test Group JSON object.
+The Test Groups element at the top level in the test vector JSON object is an array of test groups. Test vectors are grouped into similar test cases to reduce the amount of data transmitted in the vector set. The Test Group JSON object contains metadata that applies to all test vectors within the group. The following table describes the {algo-short-name} JSON elements of the Test Group JSON object.
 
 The test group for X-WING / encapDecap / 1.0 is as follows:
 
@@ -29,7 +29,7 @@ X-WING keyGen Test Group JSON Object
 [[X-WING_encapDecap_tvjs]]
 ==== X-WING encapDecap Test Case JSON Schema
 
-each test group contains an array of ne or more tst caes.  Each test case is a JSON object that represents a single test vector to be processed by the CVP client.  the following table describes the JSON elements for ech X-WING test vector.
+Each test group contains an array of one or more test cases.  Each test case is a JSON object that represents a single test vector to be processed by the CVP client.  The following table describes the JSON elements for ech X-WING test vector.
 
 [[X-WING_encapDecap_vs_tc_table]]
 X-WING keyGen test Case JSON Object
@@ -37,7 +37,7 @@ X-WING keyGen test Case JSON Object
 | JSON Value | Description | JSON Type
 
 | tcID
-| Numeric identifier for the tst case, unique across the entire vector set
+| Numeric identifier for the test case, unique across the entire vector set
 | integer
 
 | pk
@@ -45,15 +45,15 @@ X-WING keyGen test Case JSON Object
 | hex
 
 | eseed
-| 64-byte deterministic encapsulation seed when the function is encalsulation
+| 64-byte deterministic encapsulation seed when the function is encapsulation
 | hex
 
 | sk
-| The 32-byte dcapsulation key when th function is decapsulation
+| The 32-byte decapsulation key when th function is decapsulation
 | hex
 
 | ct
-| the 1120-byte ciphertext when the function is decapsulation
+| The 1120-byte ciphertext when the function is decapsulation
 | hex
 |===
 
