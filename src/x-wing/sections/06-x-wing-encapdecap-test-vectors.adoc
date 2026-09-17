@@ -8,7 +8,7 @@ The Test Groups element at the top level in the test vector JSON object is an ar
 
 The test group for X-WING / encapDecap / 1.0 is as follows:
 
-[[X-WING_keyGen_vs_tg_table]]
+[[X-WING_encapDecap_vs_tg_table]]
 X-WING keyGen Test Group JSON Object
 |===
 | JSON Value | Description | JSON Type

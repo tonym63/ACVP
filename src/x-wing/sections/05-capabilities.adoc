@@ -1,6 +1,6 @@
 === Required Prerequisite Algorithms for X-WING Validations
 
-X-WING relies on underlying cryptographic primitives as defined by the X-WING specifications.  Each prerequisite algorithm required for X-WING validation *MUST* be validated either separately or as part of th same submission.  ACVP provides the prereqVals mechanism for specifying the applicable prerequisite algorithm validation.
+X-WING relies on underlying cryptographic primitives as defined by the X-WING specifications.  Each prerequisite algorithm required for X-WING validation *MUST* be validated either separately or as part of the same submission.  ACVP provides the prereqVals mechanism for specifying the applicable prerequisite algorithm validation.
 
 The implementation relies on the following underlying algorithms:
 
