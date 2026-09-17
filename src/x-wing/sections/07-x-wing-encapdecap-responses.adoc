@@ -63,7 +63,7 @@ The following is an example JSON test vector response object for X-WING / encapD
                 "tests": [
                     {
                         "tcId": 76,
-                        "k": "87B9103AA..."
+                        "ss": "87B9103AA..."
                     }
                 ]
             }
