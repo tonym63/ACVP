@@ -29,6 +29,7 @@
 :spec-algorithm: X-WING
 :algo-short-name: X-WING
 
+include::common/common-sections/99-acknowledgements.adoc[]
 include::common/common-sections/00-abstract.adoc[]
 include::common/common-sections/01-intro.adoc[]
 include::common/common-sections/02-conventions.adoc[]
@@ -47,7 +48,6 @@ include::x-wing/sections/07-x-wing-keygen-responses.adoc[]
 include::x-wing/sections/07-responses.adoc[]
 include::common/common-sections/10-security.adoc[]
 include::common/common-sections/11-iana.adoc[]
-include::common/common-sections/99-acknowledgements.adoc[]
 include::x-wing/sections/98-references.adoc[]
 
 
