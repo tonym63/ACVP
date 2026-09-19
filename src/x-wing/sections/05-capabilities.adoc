@@ -1,3 +1,5 @@
+
+[[prereg_algs]]
 === Required Prerequisite Algorithms for X-WING Validations
 
 X-WING relies on underlying cryptographic primitives as defined by the X-WING specifications.  Each prerequisite algorithm required for X-WING validation *MUST* be validated either separately or as part of the same submission.  ACVP provides the prereqVals mechanism for specifying the applicable prerequisite algorithm validation.
@@ -8,37 +10,31 @@ The implementation relies on the following underlying algorithms:
    * X25519: Conforming to SP 800-186 / RFC7748 for elliptic-curve cryptography<<RFC7748>>.   
    * X25519:as specified in <<RFC7748>>, is a required prerequisite algorithm for X-WING validation.
 
-=== Prerequisite Validations
-
-Before X-WING algorithm validation can be executed, the underlying cryptographic libraries must demonstrate successful validation of the following prerequisite algorithm primitives:
-
-.Prerequisite algorithm primitives
+[[rereqs_table]]
+.Required X-WING Prerequisite Algorithms JSON Values
 |===
+| JSON Value | Description | JSON Type | Valid Values
 
-| Prerequisite Primitive | Standard Reference | Operational Purpose
+| algorithm
+| A prerequisite algorithm
+| string
+| SHA, ML-KEM, or X25519
 
-| SHA3-256 / SHAKE256
+| valValue
+| Algorithm validation number
+| string
+| Actual numbr or "same"
 
-| FIPS202
-
-| Message hashing and internal domain separation matrix generation within ML-KEM.
-
-| KDF (HKDF-SHA256)
-
-| SP 800-56C
-
-| Hybrid key derivation and combination layer for component secrets.
-
+| prereqAlgVal
+| Prerequisite algorithm validation
+| Object with algorith and valValue properties
+| See above
 |===
-
-=== ACVP Validation Interface & JSON Profile
-
-The validation process uses standard ACVP JSON profiles to communicate registration data, test vectors, and response structures.
 
 === X-WING Algorithm Registration Properties
 
 Each X-WING algorithm capability advertised is a self-contained JSON object using the following values.
-
+[[X-WING_caps_table]]
 .X-WING Algorithm Capabilities JSON Values
 |===
 | JSON Value | Description | JSON Type | Valid Values
@@ -50,41 +46,4 @@ Each X-WING algorithm capability advertised is a self-contained JSON object usin
 |===
 
 Note: The function property is applicable only to X-WING/ encapDecap registration.
-
-=== Algorithm Registration Capabilities
-
-THe following JSON payload outlines the capabilities registration block sent by the client to request X-WING test vector challenges:
-
-.Registration Block Schema
-[source,json]
-----
-{
-  "acvVersion":"1.1.0",    
-  "algorithms": [
-   {
-    "id": 0,
-    "algorithm": "XWING",
-     "revision": "1.0",
-     "capabilities": [
-     {
-       "mode": "keyGen",
-        "role": ["initiator","responder"]
-      },
-      {
-        "mode":"encapsulation",
-         "role":["initiator"]
-       },
-       {
-         "mode":"decapsulation",
-          "role":["responder"]
-        }
-       ]
-      }
-    ]
- }
-----
-
-
-
-
 
