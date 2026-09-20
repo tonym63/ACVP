@@ -15,7 +15,7 @@ Prerequisites, if applicable, *MUST* be submitted in the registration using the 
 
 A "valValue" of "same" *SHALL* indicate that the prerequisite is satisfied by another algorithm capability included in the same registration.
 
-An example description of prerequisites within a single algorithm capability exchange looks like this.
+An example description of prerequisites within a single algorithm capability exchange looks like this:
 
 [source,json]
 ----

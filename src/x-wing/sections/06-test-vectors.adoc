@@ -3,7 +3,7 @@
 
 The ACVP server provides test vectors to the ACVP client, which are then processed by the IUT and returned to the ACVP server for validation. A typical ACVP validation test session *MAY* require multiple test vector sets to be downloaded and processed by the ACVP client. Each test vector set represents an individual cryptographic algorithm and mode defined during the capabilities registration. 
 
-For X-WING test vector sets are provided for the keyGen and encapDecap modes described in this specification.  This section describes the JSON schema for a test vector set used with {spec-algorithm} algorithms.
+For X-WING, test vector sets are provided for the keyGen and encapDecap modes described in this specification.  This section describes the JSON schema for a test vector set used with {spec-algorithm} algorithms.
 
 .Top level Test Vector JSON Elements
 |===
