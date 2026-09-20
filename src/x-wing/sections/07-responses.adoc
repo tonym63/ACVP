@@ -1,6 +1,6 @@
 
 [#responses]
-=== Test Vector Responses
+== Test Vector Responses
 
 After the ACVP client downloads and processes a vector set, it must send the response vectors back to the ACVP server. The following table describes the JSON object that represents a vector set response.
 

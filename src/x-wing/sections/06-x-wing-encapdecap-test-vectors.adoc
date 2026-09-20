@@ -59,7 +59,6 @@ X-WING encapDecap test Case JSON Object
 
 The following is an example JSON object sent from the server to the client for X-WING/ encapDecap / 1.0
 
-.Prompt JSON
 [source,json]
 ----
 [
