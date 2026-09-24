@@ -10,11 +10,11 @@ After the ACVP client downloads and processes a vector set, it must send the res
 | Property | Description | JSON Type
 
 | acvVersion
-| The ACVP version used.
+| The ACVP version used
 | string
 
 | vsId 
-| The Vector Set identifier.
+| The Vector Set identifier
 | integer
 
 | testGroups

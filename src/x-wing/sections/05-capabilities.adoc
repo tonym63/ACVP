@@ -7,8 +7,8 @@ X-WING relies on underlying cryptographic primitives as defined by the X-WING sp
 The implementation relies on the following underlying algorithms:
 
    * ML-KEM-768: Conforming to FIPS 203 <<FIPS203>> (Module-Lattice-Based Key Encapsulation mechanism)
-   * X25519: Conforming to SP 800-186 / RFC7748 for elliptic-curve cryptography<<RFC7748>>.   
-   * X25519:as specified in <<RFC7748>>, is a required prerequisite algorithm for X-WING validation.
+   * X25519: Conforming to SP 800-186 / RFC7748 for elliptic-curve cryptography <<RFC7748>>.   
+   * X25519: As specified in <<RFC7748>>, is a required prerequisite algorithm for X-WING validation.
 
 [[rereqs_table]]
 .Required X-WING Prerequisite Algorithms JSON Values

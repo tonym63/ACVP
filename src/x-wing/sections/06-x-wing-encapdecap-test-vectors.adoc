@@ -41,7 +41,7 @@ X-WING encapDecap test Case JSON Object
 | integer
 
 | pk
-| The 1216-byte encapsulation key when the function is encapsulation.
+| The 1216-byte encapsulation key when the function is encapsulation
 | hex
 
 | eseed

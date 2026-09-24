@@ -53,17 +53,17 @@ The following is an example JSON object sent from the server to the client for X
    "acvVersion": "<acvp-version>"
   },
   {
-    "vsId": 1564,
+     "vsId": 1564,
      "algorithm": "X-WING",
-     "mode" : "keyGen",
-     "revision": "1.0",
-     "testGroups": [
+      "mode" : "keyGen",
+      "revision": "1.0",
+      "testGroups": [
     {
        "tgId": 1,
        "testTypes": "AFT",
         "tests": [
       {
-         "tcId": 1,
+        "tcId": 1,
          "sk": "0123456789ABCDEF..."
        }
      ]
